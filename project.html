@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+    /* css reset */
+body{
+    margin:0px;
+    padding:0px;
+    background: url('physiotherapy-595529_1920.jpg');
+}
+.logo{
+/* border:2px solid red; */
+display: inline-block;
+position:absolute;
+    left:60px;
+    top:14px;
+}
+.logo img{
+    width: 100px;
+    margin: -17px;
+}
+.navg{
+    /* border:2px solid red; */
+    display: block;
+    margin:14px 143px;
+    width:44%;
+}
+.button{
+    /* border:2px solid red; */
+    display: inline-block;
+    position:absolute;
+    right:87px;
+    top:19px;
+}
+.navbar{
+    display: inline-block;
+
+}
+.navbar li{
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    font-family: 'Ranchers', cursive;
+     font-weight: lighter;
+    
+
+}
+.navbar li a{
+    text-decoration: none;
+    color: rgb(60, 30, 228);
+    padding: 6px 10px;
+    
+    
+}
+.navbar li a:hover, .navbar a.active{
+    text-decoration: underline;
+    color: rgb(124, 236, 236);
+}
+.btn{
+    margin:10px 14px;
+    padding:2px 2px;
+    border-radius: 10px;
+    background-color:  rgb(60, 30, 228);
+    font-weight: lighter;
+    font-size: 15px;
+    border:2px solid blue;
+    cursor: pointer;
+    font-family: 'Ranchers', cursive;
+    color: white;
+}
+.btn:hover{
+    background-color: blue;
+}
+.container{
+    border:2px solid blue;
+    float:right;
+    text-align: center;
+    width: 20%;
+    border-radius: 15px;
+    margin: 50px 30px;
+    padding: 20px 20px;
+    font-family: 'Ranchers', cursive; 
+     font-weight: lighter;
+     color: rgb(124, 236, 236);
+     font-size: 20px;
+     
+}
+
+.formgroup input{
+    text-align: center;
+    display: block;
+    width: 57%;
+    padding: 10px 8px;
+    border:2px solid cyan;
+    margin:3px auto;
+    font-size: 17px;
+     border-radius:12px ;
+     font-family: 'Ranchers', cursive; 
+     font-weight: lighter;
+}
+/* .join h1{
+    font-family: 'Ranchers', cursive; 
+     font-weight: lighter;
+     color: darkcyan;
+} */
+</style>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="">
+
+        </div>
+        <div class="navg">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="button">
+            <button class="btn">Visit us on FB <i class="fa fa-facebook-f"></i></button>
+            <button class="btn">Call Us Now &phone;</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1 class="join">Join Us Now!</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="name" placeholder="Enter your Name">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="location" placeholder="Enter your City">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="Age" placeholder="Enter your Age">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="Gender" placeholder="Enter your Gender">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+
+    </div>
+</body>
+</html>
